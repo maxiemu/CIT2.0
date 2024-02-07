@@ -1,0 +1,33 @@
+<!-- dept_shirt.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT MERCH - Department Shirt</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='dept_shirt.css') }}">
+</head>
+<body>
+    <header>
+        <h1>CIT MERCH</h1>
+        <a href="{{ url_for('home') }}" class="button">Home</a>
+        <a href="{{ url_for('about') }}" class="button">About</a>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-item">
+                <img src="{{ url_for('static', filename='dept_shirt.jpg') }}" alt="DEPARTMENT SHIRT" style="width: 250px; height: 250px;">
+                <h2>DEPARTMENT SHIRT</h2>
+                <p class="description">Represent your department with pride! Our department shirts are comfortable, stylish, and perfect for showcasing your academic affiliation.</p>
+                <p class="price">₱ 500</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CIT MERCH. All rights reserved.</p>
+    </footer>
+</body>
+</html>

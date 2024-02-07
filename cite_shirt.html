@@ -1,0 +1,36 @@
+<!-- cite_shirt.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='cite_shirt.css') }}">
+    <title>CIT MERCH</title>
+</head>
+<header>
+        <h1>CIT MERCH</h1>
+        <a href="{{ url_for('home') }}" class="button">Home</a>
+        <a href="{{ url_for('about') }}" class="button">About</a>
+    </header>
+<body>
+
+
+    <main>
+        <section class="product-details">
+            <div class="product-item">
+                <img src="{{ url_for('static', filename='dept_shirt.jpg') }}" alt="CITE SHIRT" class="shirt-image">
+                <div class="description">
+                    <h2>CITE SHIRT</h2>
+                    <p class="price">₱ 500</p>
+                    <p>This stylish CITE shirt is a must-have for all technology enthusiasts. It features a comfortable fit and a unique design, making it perfect for any occasion.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CIT MERCH. All rights reserved.</p>
+    </footer>
+</body>
+</html>

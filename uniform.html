@@ -1,0 +1,34 @@
+<!-- uniform.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT MERCH - Uniform</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='uniform.css') }}">
+</head>
+<body>
+    <header>
+        <h1>CIT MERCH</h1>
+        <a href="{{ url_for('home') }}" class="button">Home</a>
+        <a href="{{ url_for('about') }}" class="button">About</a>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-item">
+                <img src="{{ url_for('static', filename='uniform.jpg') }}" alt="UNIFORM" style="width: 250px; height: 250px;">
+                <h2>UNIFORM</h2>
+                <p class="description">High-quality Corporate Attire for CIT students. Comfortable and stylish, perfect for representing your school.</p>
+                <p class="price">₱ 1500</p>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CIT MERCH. All rights reserved.</p>
+    </footer>
+</body>
+</html>

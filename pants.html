@@ -1,0 +1,33 @@
+<!-- pants.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='pants.css') }}">
+    <title>CIT MERCH</title>
+</head>
+<body>
+    <header>
+        <h1>CIT MERCH</h1>
+        <a href="{{ url_for('home') }}" class="button">Home</a>
+        <a href="{{ url_for('about') }}" class="button">About</a>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="product-item">
+                <img src="{{ url_for('static', filename='pants.jpg') }}" alt="PANTS" class="product-image">
+                <h2>PANTS</h2>
+                <p class="price">₱ 400</p>
+                <p class="description">Stay comfortable and stylish with our CIT-branded pants. Perfect for everyday wear, these pants are made from high-quality materials to ensure a perfect fit.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; CIT MERCH. All rights reserved.</p>
+    </footer>
+</body>
+</html>
